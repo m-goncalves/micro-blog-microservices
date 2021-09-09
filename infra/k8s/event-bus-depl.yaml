@@ -24,7 +24,6 @@ metadata:
 spec:
   selector:
     app: event-bus
-    type: ClusterIP
   ports:
     - name: event-bus
       protocol: TCP
