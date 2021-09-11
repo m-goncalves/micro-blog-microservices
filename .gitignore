@@ -10,4 +10,5 @@ posts/package-lock.json
 event-bus/package-lock.json
 query/package-lock.json
 moderation/package-lock.json
+infra/k8s/skaffold
 *.tgz                 
