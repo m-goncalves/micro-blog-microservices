@@ -1,6 +1,6 @@
 FROM node:alpine
 
-LABEL marcelo-gonçalves ="tchelojg@gmail.com"
+LABEL marcelo-gonçalves="tchelojg@gmail.com"
 
 WORKDIR /app
 
