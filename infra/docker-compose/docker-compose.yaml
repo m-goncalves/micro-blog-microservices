@@ -1,0 +1,42 @@
+version:  '3.3'
+
+services:
+  client:
+    image: marjugoncalves/client:latest
+    container_name: client
+    restart: always
+    ports:
+      - 3000:3000
+  posts:
+    image: marjugoncalves/posts:latest
+    container_name: posts
+    restart: always
+    ports:
+      - 4000:4000
+  comments:
+    image: marjugoncalves/comments:latest
+    container_name: comments
+    restart: always
+    ports:
+      - 4001:4001
+  event-bus:
+    image: marjugoncalves/event-bus:latest
+    container_name: event-bus
+    restart: always
+    ports:
+      - 4005:4005
+  moderation:
+    image: marjugoncalves/moderation:latest
+    container_name: moderation
+    restart: always
+    ports:
+      - 4003:4003
+  query:
+    image: marjugoncalves/query:latest
+    container_name: query
+    restart: always
+    ports:
+      - 4002:4002
+networks:
+  default:
+   name: micro-blog
